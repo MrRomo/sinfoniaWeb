@@ -1527,12 +1527,12 @@ tbody:hover > tr:hover td {
 }
 
 .galeria li {
-    margin: 1px;
+    margin: 0px;
 }
 
 .galeria img {
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 70px;
 }
 
 /*Estilos del modal*/
@@ -1545,10 +1545,10 @@ tbody:hover > tr:hover td {
 
     display: block;
     position: fixed;
-    background: rgba(0,0,0,0.8);
-    top: 0;
-    left: 0;
-    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    top: 50;
+    left: 100;
+    width: 100;
     height: 100%;
 }
 
@@ -1576,16 +1576,16 @@ tbody:hover > tr:hover td {
 }
 
 .imagen a:nth-child(2) {
-    margin: 0;
-    height: 100%;
+	margin: 100;
+    height: 75%;
     flex-shrink: 2;
 }
 
 .imagen img {
-    width: 500px;
+    width: 100%px;
     height: 100%;
     max-width: 100%;
-    border: 7px solid #fff;
+    border: 2px solid #fff;
     box-sizing: border-box;
 }
 
