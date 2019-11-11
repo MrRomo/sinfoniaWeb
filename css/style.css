@@ -589,27 +589,6 @@ a.read {
 
 /*-- Slider --*/
 /* inner banner */
-.inner-banner-w3ls {
-	background: url(http://www.teksbotics.com/products/robots/wp-content/uploads/2017/10/pepper-banner-2.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	background-size: cover;
-	min-height: 300px;
-	position: relative;
-}
-
-.inner-banner-w3ls:before {
-	background: rgba(0, 0, 0, 0.37);
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-}
-
 li.breadcrumb-nav {
 	font-size: 1em;
 	color: #fff;
@@ -1211,9 +1190,7 @@ input[type="submit"] {
 	.head-row-home {
 		padding-top: 2em;
 	}
-	.inner-banner-w3ls {
-		min-height: 250px;
-	}
+
 }
 
 @media screen and (max-width: 667px) {
@@ -1600,4 +1577,8 @@ tbody:hover > tr:hover td {
     padding: 5px;
     border-radius: 50%;
     line-height: 25px;
+}
+
+.toolbox img{
+	max-width: 100px;
 }
