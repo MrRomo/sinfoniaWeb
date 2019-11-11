@@ -1493,6 +1493,10 @@ tbody:hover > tr:hover td {
 	max-width: 200px;
 	max-height: 100px;
 }
+.galeria img:hover{
+	background: #00ddd844;
+	cursor:pointer;
+}
 
 
 /*Estilos del modal*/
