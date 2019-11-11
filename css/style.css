@@ -205,17 +205,14 @@ li.nav-item.active a {
 
 
 header {
-	padding: 10px 0;
 	background: rgba(65, 216, 209, 0.82);
 	width: 100%;
-	position: absolute;
 	z-index: 9;
 }
 
 /*-- //header --*/
 /* banner */
 .common-bg {
-	min-height: 100vh;
 	position: relative;
 	z-index: 1;
 	padding: 0 1em;
@@ -252,6 +249,7 @@ header {
 	text-transform: capitalize;
 	font-weight: 600;
 	font-size: 4em;
+	top: 5px;
 }
 
 .bnr-sub-txt span {
