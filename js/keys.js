@@ -170,7 +170,7 @@ console.log()
 
 
 const personTemplate = (content) => {
-    const htmlString = `<div class="card col-md-3">
+    const htmlString = `<div class="card col-sm-3">
                             <div class="card-header">
                                 <img class="img-fluid" src="${content.url}"
                                     alt="${content.url}">
@@ -191,16 +191,16 @@ function createTemplate(HTMLString) {
     return html.body.children[0];
 }
 
-function renderContents($container, list,template) {
+function renderContents($container, list, template) {
     console.log(list)
     list.forEach((content) => {
-      const HTMLString = template(content);
-      const contentElement = createTemplate(HTMLString);
-      $container.append(contentElement);
-      const image = contentElement.querySelector('img');
-      image.addEventListener('load', (event) => {
-        event.srcElement.classList.add('fadeIn');
-      })
+        const HTMLString = template(content);
+        const contentElement = createTemplate(HTMLString);
+        $container.append(contentElement);
+        const image = contentElement.querySelector('img');
+        image.addEventListener('load', (event) => {
+            event.srcElement.classList.add('fadeIn');
+        })
     })
     console.log("Generated...");
 }
@@ -211,3 +211,11 @@ const $executive = document.querySelector('.executive');
 
 renderContents($researcher, object2List(researcher), personTemplate)
 renderContents($executive, object2List(executive), personTemplate)
+
+
+
+$('.imaGalery').click(e => {
+    url = e.target.attributes[1].value;
+    $('#galleryImg').attr("src",url)
+    $('#modalImages').modal('toggle')
+})
